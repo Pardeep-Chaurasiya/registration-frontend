@@ -31,7 +31,7 @@ const Register=()=>{
         //make all fields mandatory
         if(name&&email&&password&&password===reEnteredPassword){
             await axios
-            .post("https://registration-backend-avqq.onrender.com//register",user)
+            .post("https://registration-backend-avqq.onrender.com/register",user)
             .then((res)=>alert(res.data.message));
             //once registration is done ,we have to navigate to login page
             navigate("/login");
